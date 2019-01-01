@@ -1,0 +1,20 @@
+# This file is auto-generated during the composer install
+parameters:
+    # database_driver: pdo_mysql
+    # database_host: 127.0.0.1
+    # database_port: null
+    # database_name: siteinterne
+    # database_user: root
+    # database_password: null
+    database_driver: pdo_mysql
+    database_host: mysql51-164.bdb
+    database_port: null
+    database_name: xprojetsintra2
+    database_user: xprojetsintra2
+    database_password: s5D8cT77
+    mailer_transport: gmail
+    # mailer_host: ns0.ovh.net
+    mailer_user: xprojets.mailer
+    mailer_password: !azerty!
+    locale: fr
+    secret: ThisTokenIsNotSoSecretChangeIt

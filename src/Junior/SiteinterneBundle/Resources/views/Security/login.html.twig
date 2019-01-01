@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Site interne d'XProjets'">
+		<meta name="author" content="Delbouys">
+		<link rel="icon" href="{{asset('img/logos/favicon.png')}}">
+		<title>Site interne d'XProjets</title>
+		<link rel="stylesheet" href="{{asset('css/Siteinterne/css/bootstrap.css')}}">
+		<link rel="stylesheet" href="{{asset('css/Siteinterne/css/carousel.css')}}">
+	</head>
+
+	<body>
+		<section class="row">
+			<div class="col-md-10 col-md-offset-1 page_login">
+		  <h1>Bienvenue sur le site interne d'XProjets</h1>
+			  {% if error %}
+				<div class="alert alert-danger">{{ error.message }}</div>
+			  {% endif %}
+
+				<form action="{{ path('login_check') }}" method="post" class="form-horizontal">
+					<input type="hidden" id ="username" name="_username" value="{{utilisateur.username}}" />
+					<input type="hidden" id="password" name="_password" value="{{utilisateur.password}}" />
+					<br />
+					<input class="btn btn-default btn-lg" type="submit" value="Connexion ({{utilisateur.firstName}})" />
+				  </form>
+			</div>
+		</section>
+  </body>
+</html>
